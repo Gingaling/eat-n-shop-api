@@ -1,0 +1,20 @@
+[
+	{
+		 "name": "Milk",
+        "howMuch": 2,
+        "eaten": 0,
+        "img": "",
+        "unitMeasure": "gallon",
+        "purchased": False ,
+        "type":  "food"
+    }, 
+	{
+		 "name": "Eggs",
+        "howMuch": 12,
+        "eaten": 0,
+        "img": "",
+        "unitMeasure": "egg",
+        "purchased": False ,
+        "type":  "food"
+    }
+]
