@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const groceryController = require('../controllers/groceryController');
+const groceryController = require('./controllers/groceryController');
 
 app.set('port', process.env.PORT || 8000);
 
