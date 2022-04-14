@@ -9,11 +9,12 @@ function Form() {
 		name: '',
 		howMuch: 0,
 		eaten: 0,
+		minimum: 0,
 		img: '',
 		unitMeasure: '',
 		purchased: false,
 		type: 'grocery',
-		Date: Date
+		Date: ''
 	});
 
 	const handleChange = event => {
@@ -65,41 +66,45 @@ function Form() {
 									/>
 								</div>
 							</div>
-							<div className="subContainer">
-								<div className="howMuch-container">
-									<div className="howMuch-label">
-										<label htmlFor="howMuch">amount on hand</label>
-									</div>
-									<div className="howMuch-input">
-										<input
-											onChange={handleChange}
-											id="howMuch"
-											value={grocery.howMuch}
-											placeholder="amount"
-											required
-										/>
-									</div>
+							<div className="howMuch-container">
+								<div className="howMuch-label">
+									<label htmlFor="howMuch">amount on hand</label>
 								</div>
-								<div className="eaten-container">
-									<div className="eaten-label">
-										<label htmlFor="eaten">amount eaten or used</label>
-									</div>
-									<div className="eaten-input">
-										<input
-											onChange={handleChange}
-											id="eaten"
-											value={grocery.eaten}
-											placeholder="amount"
-										/>
-									</div>
+								<div className="howMuch-input">
+									<input
+										onChange={handleChange}
+										id="howMuch"
+										value={grocery.howMuch}
+										placeholder="amount"
+										required
+									/>
 								</div>
 							</div>
-							<div className="notRequired-container">
-								<div className="notRequired-label">
-									<p>Detail</p>
+							<div className="eaten-container">
+								<div className="eaten-label">
+									<label htmlFor="eaten">amount consumed</label>
 								</div>
-								<div className="notRequired-input">
-									<p>Optional</p>
+								<div className="eaten-input">
+									<input
+										onChange={handleChange}
+										id="eaten"
+										value={grocery.eaten}
+										placeholder="amount"
+									/>
+								</div>
+							</div>
+							<div className="minimum-container">
+								<div className="minimum-label">
+									<label htmlFor="minimum">my minimum</label>
+								</div>
+								<div className="minimum-input">
+									<input
+										onChange={handleChange}
+										id="minimum"
+										value={grocery.minimum}
+										placeholder="amount"
+										required
+									/>
 								</div>
 							</div>
 							<div className="img-container">
@@ -115,44 +120,65 @@ function Form() {
 									/>
 								</div>
 							</div>
-							<div className="film-container">
-								<div className="film-label">
-									<label htmlFor="filmAdaptation">Adapted To Film </label>
+							<div className="unitMeasure-container">
+								<div className="unitMeasure-label">
+									<label htmlFor="unitMeasure">unit of measurement</label>
 								</div>
-								<div className="film-input">
+								<div className="unitMeasure-input">
 									<input
-										onChange={() => {
-											setGrocery({
-												...grocery,
-												filmAdaptation: !grocery.filmAdaptation
-											});
-										}}
-										checked={grocery.filmAdaptation}
-										type="checkbox"
-										id="filmAdaptation"
-										value={grocery.filmAdaptation}
-										placeholder="Adapted To Film"
+										onChange={handleChange}
+										id="unitMeasure"
+										value={grocery.unitMeasure}
+										placeholder="unit"
+										required
+									/>
+								</div>
+							</div>{' '}
+							<div className="purchased-container">
+								<div className="purchased-label">
+									<label htmlFor="purchased">purchased?</label>
+								</div>
+								<div className="purchased-input">
+									<input
+										onChange={handleChange}
+										id="purchased"
+										value={grocery.purchased}
+										placeholder="false"
+										required
+									/>
+								</div>
+							</div>{' '}
+							<div className="Date-container">
+								<div className="Date-label">
+									<label htmlFor="Date">date of activity</label>
+								</div>
+								<div className="Date-input">
+									<input
+										onChange={handleChange}
+										id="Date"
+										value={grocery.Date}
+										placeholder="date"
 										required
 									/>
 								</div>
 							</div>
-							<div className="synopsis-container">
-								<div className="synopsis-label">
-									<label htmlFor="description">Synopsis </label>
+							<div className="type-container">
+								<div className="type-label">
+									<label htmlFor="type">type of grocery`</label>
 								</div>
-								<div className="synopsis-input">
+								<div className="type-input">
 									<input
 										onChange={handleChange}
-										id="description"
-										value={grocery.description}
-										placeholder="Once upon a time..."
+										id="type"
+										value={grocery.type}
+										placeholder="type"
 									/>
 								</div>
 							</div>
 						</div>
 						<div className="addGroceryButton-container">
 							<button type="submit" className="addGroceryButton">
-								Add to Inventory{' '}
+								Submit to Update{' '}
 							</button>
 						</div>
 					</form>

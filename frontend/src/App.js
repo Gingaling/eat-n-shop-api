@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom';
-// import GroceryList from './components/GroceryList';
+import GroceryList from './components/GroceryList/GroceryList';
 // import BookList from './components/BookList/BookList';
 import Form from './components/Form/Form';
 import Nav from './components/Nav/Nav';
@@ -28,16 +28,11 @@ function App() {
     return (
         <>
             <header id='page-top'>
-                <div id='button-nav-container'>
-                    <button id='button-nav' onClick={handleClick}>
-                       Click for More
-                    </button>
-                </div>
-
                 <div id='title-nav-container'>
                     <div id='title-nav'>
                         <Link to='/'>
                             <h1 id='page-title'>Eat 'n Shop</h1>
+                            {/* <img  className="App-Logo" src="https://i.imgur.com/GZDFcLgt.png" /> */}
                         </Link>
                     </div>
                 </div>
@@ -45,8 +40,8 @@ function App() {
             <Nav classState={classState} />
             <div>
                 <Routes>
-                    {/* <Route path='/list' element={<GroceryList />} /> */}
-                    {/* <Route path='/eaten' element={<GroceryList.eaten />} /> */}
+                    <Route path='/list' element={<GroceryList />} />
+                    <Route path='/eaten' element={<GroceryList.eaten />} />
                     <Route path='/add-grocery' element={<Form />} />
                     <Route path='/' element={<Home />} />
                 </Routes>

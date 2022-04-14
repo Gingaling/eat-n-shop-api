@@ -18,7 +18,7 @@ export default function GroceryList() {
 					console.log('error');
 				});
 		},
-		[type]
+		[type]           
 	);
 
 	return (

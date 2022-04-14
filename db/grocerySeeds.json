@@ -1,20 +1,68 @@
 [
-	{
-		 "name": "Milk",
-        "howMuch": 2,
-        "eaten": 0,
-        "img": "",
-        "unitMeasure": "gallon",
-        "purchased": False ,
-        "type":  "food"
-    }, 
-	{
-		 "name": "Eggs",
-        "howMuch": 12,
-        "eaten": 0,
-        "img": "",
-        "unitMeasure": "egg",
-        "purchased": False ,
-        "type":  "food"
-    }
+  {
+    "name": "Milk",
+    "howMuch": 2,
+    "eaten": 0,
+    "img": "",
+    "unitMeasure": "gallon",
+    "minimum": 0.125,
+    "purchased": false,
+    "Date": "2022-04-11",
+    "type": "food"
+  },
+  {
+    "name": "Eggs",
+    "howMuch": 12,
+    "eaten": 0,
+    "img": "",
+    "unitMeasure": "egg",
+    "minimum": 3,
+    "purchased": false,
+    "Date": "2022-04-11",
+    "type": "food"
+  },
+  {
+    "name": "Bread",
+    "howMuch": 14,
+    "eaten": 0,
+    "img": "",
+    "unitMeasure": "slices",
+    "minimum": 3,
+    "purchased": false,
+    "Date": "2022-04-09",
+    "type": "food"
+  },
+  {
+    "name": "Spaghetti",
+    "howMuch": 16,
+    "eaten": 0,
+    "img": "",
+    "unitMeasure": "ounces",
+    "minimum": 8,
+    "purchased": false,
+    "Date": "2022-04-11",
+    "type": "food"
+  },
+  {
+    "name": "Popsicles",
+    "howMuch": 16,
+    "eaten": 0,
+    "img": "",
+    "unitMeasure": "popsicle",
+    "minimum": 3,
+    "purchased": false,
+    "Date": "2022-04-11",
+    "type": "food"
+  },
+  {
+    "name": "Cereal",
+    "howMuch": 17,
+    "eaten": 0,
+    "img": "",
+    "unitMeasure": "bowls",
+    "minimum": 3,
+    "purchased": false,
+    "Date": "2022-04-11",
+    "type": "food"
+  }
 ]
