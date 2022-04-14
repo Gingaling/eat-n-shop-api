@@ -1,10 +1,10 @@
-const mongoose = require('../db/connections');
+const mongoose = require('../db/connections.js');
 
 // import Grocery Model
 
-const Grocery = require('../backend/models/Grocery.js');
+const Grocery = require('../models/Grocery');
 
-const grocerySeeds = require('../backend/db/grocerySeeds.json');
+const grocerySeeds = require('./grocerySeeds.json');
 
 Grocery.deleteMany({})
 	.then(() => {

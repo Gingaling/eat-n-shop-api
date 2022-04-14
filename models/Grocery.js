@@ -5,12 +5,12 @@ const Schema = mongoose.Schema;
 
 const GrocerySchema = new Schema({
 	name: { type: String, require: true },
-	howMuch: { type: Integer, default = 0 },
-	eaten: { type: Integer, default = 0 },
+	howMuch: { type: Number, default: 0 },
+	eaten: { type: Number, default: 0 },
 	img: String,
-	unitMeasure: String, 
-    purchased: Boolean,
-    type: String
+	unitMeasure: String,
+	purchased: Boolean,
+	type: String
 });
 
 const Grocery = mongoose.model('Grocery', GrocerySchema);

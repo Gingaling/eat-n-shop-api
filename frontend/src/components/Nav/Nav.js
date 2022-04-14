@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Nav({ classState }) {
+function Nav() {
     return (
         <>
-            <nav className={`${classState}` + ' nav'} id='nav-genres'>
+            <nav className='navs' id='nav-genres'>
                 <ul className='nav-ul'>
-                    <Link to='/books'>
+                    <Link to='/list'>
                         <li className='nav-link'>Current Inventory</li>
                     </Link>
-                    <Link to='/grocery/Eaten'>
+                    <Link to='/eaten'>
                         <li className='nav-link'>What I Have Eaten</li>
                     </Link>
                 </ul>
-                <Link to='/add-book'>
-                    <button id='add-book'>Add a grocery item</button>
+                <Link to='/add-grocery'>
+                    <button id='add-grocery'>Add a grocery item</button>
                 </Link>
             </nav>
         </>
@@ -22,4 +22,3 @@ function Nav({ classState }) {
 }
 
 export default Nav;
-

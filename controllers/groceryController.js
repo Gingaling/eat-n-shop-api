@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const Grocery = require('../models/Grocery');
+const Grocery = require('./models/Grocery');
 
 // Get all Grocery Items
 
@@ -17,8 +17,6 @@ router.get('/', async (req, res) => {
 		console.log(error);
 	}
 });
-
-
 
 // Get Grocery by ID
 

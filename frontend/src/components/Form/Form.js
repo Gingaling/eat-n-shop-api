@@ -24,7 +24,7 @@ function Form() {
 		event.preventDefault();
 		console.log(grocery);
 		axios
-			.post('https://eat-n-shop4.herokuapp.com/grocery', grocery)
+			.post('https://eat-n-shop5.herokuapp.com/grocery', grocery)
 			.then(res => {
 				console.log(res);
 				if (res.status === 200) {

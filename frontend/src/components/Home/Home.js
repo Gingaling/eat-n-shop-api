@@ -1,6 +1,5 @@
 import './Home.css';
 import { useState } from 'react';
-import GroceryOnHandList from '../GroceryOnHand/GroceryOnHandList';
 import { Link } from 'react-router-dom';
 
 export default function Home({ genre }) {
@@ -12,13 +11,13 @@ export default function Home({ genre }) {
 
 	return (
 		<main id="main-content">
-			<div id="roulette-container">
+			<div id="grocery-container">
 				<div>
 					<h2 className="home-CTA">Keep Track of Your Cupboard</h2>
 				</div>
 				<form action="" onChange={handleSelect} className="home-form">
-					<label htmlFor="selectGenre">Choose a grocery item:</label>
-					<select name="selectGenre" id="selectGenre" className="drop-down">
+					<label htmlFor="selectGrocery">Choose a grocery item:</label>
+					<select name="selectGrocery" id="selectGrocery" className="drop-down">
 						<option value="" className="option">
 							Select..
 						</option>
@@ -42,7 +41,7 @@ export default function Home({ genre }) {
 				<img
 					src="https://cdn.pixabay.com/photo/2012/04/03/22/49/fruits-25266_960_720.jpg"
 					alt=""
-					id="roulette-img"
+					id="grocery-img"
 				/>
 			</div>
 		</main>

@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     padding: 0px;
+    
 }
 body {
     background-color: rgb(232, 175, 106);
@@ -75,7 +76,7 @@ label {
     align-items: flex-start;
 }
 
-#add-book {
+#add-grocery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -196,4 +197,3 @@ a {
         font-size: 3rem;
     }
 }
-

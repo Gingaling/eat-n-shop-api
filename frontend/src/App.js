@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom';
-// import Book from './components/Book/Book';
+// import GroceryList from './components/GroceryList';
 // import BookList from './components/BookList/BookList';
 import Form from './components/Form/Form';
 import Nav from './components/Nav/Nav';
@@ -30,7 +30,7 @@ function App() {
             <header id='page-top'>
                 <div id='button-nav-container'>
                     <button id='button-nav' onClick={handleClick}>
-                        {/* <FontAwesomeIcon icon={faBook} className='icon'></FontAwesomeIcon> */}
+                       Click for More
                     </button>
                 </div>
 
@@ -45,10 +45,9 @@ function App() {
             <Nav classState={classState} />
             <div>
                 <Routes>
-                    {/* <Route path='/list' element={<BookList />} /> */}
-                    {/* <Route path='/books/:genre' element={<BookList />} /> */}
-                    <Route path='/add-book' element={<Form />} />
-                    {/* <Route path='/:genre' element={<Book />} /> */}
+                    {/* <Route path='/list' element={<GroceryList />} /> */}
+                    {/* <Route path='/eaten' element={<GroceryList.eaten />} /> */}
+                    <Route path='/add-grocery' element={<Form />} />
                     <Route path='/' element={<Home />} />
                 </Routes>
             </div>

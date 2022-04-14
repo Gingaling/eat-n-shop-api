@@ -7,12 +7,12 @@ const db = mongoose.connection;
 
 mongoose.connect(mongoURI);
 
-db.on('error', err => console.log(err.message + ' is Mongod not running?'));
-db.on('connected', () => console.log('mongo connected at: ', mongoURI));
-db.on('disconnected', () => console.log('mongo disconnected'));
+db.on('error', err => console.log(err.message + ' is MongoDB not running?'));
+db.on('connected', () => console.log('MongoDB connected at: ', mongoURI));
+db.on('disconnected', () => console.log('MongoDB disconnected'));
 
 db.on('open', () => {
-	console.log('✅ mongo connection made!');
+	console.log('✅ MongoDB connection made!🧜‍♀️');
 });
 
 module.exports = mongoose;
