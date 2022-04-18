@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Gingaling/eat-n-shop5#readme",
   "dependencies": {
+    "cjs": "^0.0.11",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",

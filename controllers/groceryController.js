@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
 
 // Get Grocery by ID
 
-router.get('/:id', async (req, res) => {
+router.get('/:_id', async (req, res) => {
 	try {
 		const grocery = await Grocery.findById(req.params.id);
 		if (grocery) {
@@ -44,7 +44,7 @@ router.post('/', (req, res) => {
 
 // Update Grocery by Id
 
-router.put('/:id', async (req, res) => {
+router.put('/:_id', async (req, res) => {
 	try {
 		const updatedGrocery = req.body;
 		const updatedDocument = await Grocery.findByIdAndUpdate(
@@ -60,7 +60,7 @@ router.put('/:id', async (req, res) => {
 
 //  Delete Grocery by ID
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:_id', async (req, res) => {
 	try {
 		const deleteGrocery = await Grocery.findByIdAndDelete(req.params.id);
 		res.json(deleteGrocery);

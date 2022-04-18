@@ -10,9 +10,10 @@ const GrocerySchema = new Schema({
 	remaining: {
 		type: Number,
 		default: function() {
-			return this.howMuch - this.eaten
+			return this.howMuch - this.eaten;
 		}
-	minimum: Number,
+	},
+	minimum: { type: Number, require: true },
 	unitMeasure: String,
 	purchased: Boolean,
 	Date: String,
