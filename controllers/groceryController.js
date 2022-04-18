@@ -24,7 +24,7 @@ router.get('/:id', async (req, res) => {
 	try {
 		const grocery = await Grocery.findById(req.params.id);
 		if (grocery) {
-			res.json(books);
+			res.json(grocery);
 		} else {
 			res.sendStatus(404);
 		}
