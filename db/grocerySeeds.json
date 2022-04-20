@@ -3,7 +3,7 @@
     "name": "Milk",
     "howMuch": 2,
     "eaten": 0,
-    "remaining":
+    "remaining": 2,
     "minimum": 0.125,
     "unitMeasure": "gallon(s)",
     "purchased": false,
@@ -15,7 +15,7 @@
     "name": "Eggs",
     "howMuch": 12,
     "eaten": 4,
-    "remaining":
+    "remaining": 8,
     "minimum": 3,
     "unitMeasure": "egg(s)",
     "purchased": false,
@@ -27,7 +27,7 @@
     "name": "Bread",
     "howMuch": 14,
     "eaten": 4,
-    "remaining":
+    "remaining": 10,
     "minimum": 3,
     "unitMeasure": "slice(s)",
     "purchased": false,
@@ -39,7 +39,7 @@
     "name": "Spaghetti",
     "howMuch": 16,
     "eaten": 0,
-    "remaining":
+    "remaining": 16,
     "minimum": 8,
     "unitMeasure": "ounce(s)",
     "purchased": false,
@@ -51,7 +51,7 @@
     "name": "Popsicles",
     "howMuch": 12,
     "eaten": 0,
-    "remaining":
+    "remaining": 12,
     "minimum": 3,
     "unitMeasure": "popsicle(s)",
     "purchased": false,
@@ -63,7 +63,7 @@
     "name": "Cereal",
     "howMuch": 12,
     "eaten": 0,
-    "remaining":
+    "remaining": 12,
     "minimum": 3,
     "unitMeasure": "bowl(s)",
     "purchased": false,
