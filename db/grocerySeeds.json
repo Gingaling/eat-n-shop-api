@@ -14,8 +14,8 @@
   {
     "name": "Eggs",
     "howMuch": 12,
-    "eaten": 4,
-    "remaining": 8,
+    "eaten": 10,
+    "remaining": 2,
     "minimum": 3,
     "unitMeasure": "egg(s)",
     "purchased": false,
@@ -50,8 +50,8 @@
   {
     "name": "Popsicles",
     "howMuch": 12,
-    "eaten": 0,
-    "remaining": 12,
+    "eaten": 10,
+    "remaining": 2,
     "minimum": 3,
     "unitMeasure": "popsicle(s)",
     "purchased": false,
