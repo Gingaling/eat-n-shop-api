@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Patua+One&display=swap")
+
+* {
+    box-sizing: border-box
+}
+
+.master-container {
+    display: flex;
+    flex-direction: column
+}
+
+.form-container {
+	font-family: 'Seminole One';
+	font-weight: bolder;
+	width: 50%;
+	display: flex;
+	color: rgba(114, 237, 118, 0.854);
+	font-size: 2rem;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+	flex-direction: column;
+	justify-content: right;
+	text-align: right;
+	margin: 6em 2rem 2rem 2rem;
+	padding: 1.5em 1em;
+	border: solid .5m black;
+	border-radius: 15px;
+	background-image: url("https://i.imgur.com/PcZds5T.jpg/");
+	background-blend-mode: lighten;
+	box-shadow: 15px 15px 15px 10px rgb(99, 98, 98);
+}
+
+#titlealone {
+	font-size: 6rem;
+	font-family: 'Fredoka+One', cursive;
+	font-weight: bolder;
+	padding-top: 7%;
+}
