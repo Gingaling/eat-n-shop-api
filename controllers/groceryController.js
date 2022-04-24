@@ -62,7 +62,22 @@ router.put('/:_id', async (req, res) => {
 
 router.delete('/:_id', async (req, res) => {
 	try {
-		const deleteGrocery = await Grocery.findByIdAndDelete(req.params.id);
+		const deleteGrocery = await Grocery.findByIdAndDelete({
+			_id: req.params.id
+		});
+		res.json(deleteGrocery);
+	} catch (error) {
+		console.log.error;
+	}
+});
+
+//  Delete (Remove) Grocery by name
+
+router.delete('/name', async (req, res) => {
+	try {
+		const deleteGrocery = await Grocery.findOneAndRemove({
+			name: req.params.name
+		});
 		res.json(deleteGrocery);
 	} catch (error) {
 		console.log.error;
